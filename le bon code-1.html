@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style-1.css">
+</head>
+<body>
+    <h1>Se connecter</h1><br>
+
+    <div>
+        <!-- Zone de saisie pour l'identifiant -->
+        <a><label for="login">Login :</label></a>
+        <input type="text" id="login" name="login" class="user">
+
+        <!-- Zone de saisie pour le mot de passe -->
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password">
+
+        <!-- Bouton de validation -->
+        <button type="button" onclick="validerConnexion()">Valider</button><br><br>
+
+        <!-- bouton vers la page d'accueil/personnel -->
+        <button type="button" onclick="personnel()">Personnel<a href="Personnel-2.html"></button></a><br><br>
+        <button type="button" onclick="absence()">Absence<a href="Absence-1.html"></button></a><br>
+        
+    </div>
+
+    <script>
+        function validerConnexion() {
+            // Simulation d'une vérification côté client
+            const login = document.getElementById("login").value;
+            const password = document.getElementById("password").value;
+
+            // envoyer les données à la base pour les valider
+            if (login === "admin" && password === "1234") {
+                alert("Connexion réussie !");
+                window.location.href = "Personnel-2.html";
+            } else {
+                alert("Identifiants incorrects.");
+            }
+        }
+    </script>
+</body>
+</html>

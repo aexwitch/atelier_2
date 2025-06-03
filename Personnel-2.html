@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnel</title><br>
+    <link rel="stylesheet" href="personnel.css">
+</head>
+<body>
+    
+
+    <div class="bouton">
+        <!--choisir les modif dans la liste-->
+        <button type="button" onclick="accueil()">Accueil<a href="le bon code-1.html"></button></a></br>
+        <div class="titre"><h1> Personnel</h1></div></br>
+        <button type="button" onclick="absence()">Absence<a href="Absence-1.html"></button></a></br>
+    </div>
+    
+
+       <div>
+        <table>
+            <thread>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">personnel</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <th scope="row"><input type="checkbox"> </th>
+                    <td>idk</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>
+            <button type="button" onclick="ajouter()">Ajouter</button>
+            <button type="button" onclick="modifier()">Modifier</button>
+            <button type="button" onclick="supprimer()">Supprimer</button>
+        </div>
+    </div>
+
+
+    <div>
+        <form action="">
+            <h4>Nouveau</h4>
+            <hr>
+            <div class="name-field">
+                <div>
+                    <label>Nom : </label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Prénom : </label>
+                    <input type="text">
+                </div>
+                
+            </div> 
+            <label>Téléphone : </label>
+            <input type="number">
+            <label>Mail : </label>
+            <input type="email">
+            <input type="submit" value="Ajouter">
+            <input type="button" value="Annuler">
+        </form>
+    </div>
+
+    <div>
+        <form action="">
+            <h4>Modification</h4>
+            <hr>
+            <div class="name-field">
+                <div>
+                    <label>Nom : </label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Prénom : </label>
+                    <input type="text">
+                </div>
+                
+            </div> 
+            <label>Téléphone : </label>
+            <input type="number">
+            <label>Mail : </label>
+            <input type="email">
+            <input type="submit" value="Modifier">
+            <input type="button" value="Annuler">
+        </form>
+    </div>
+</body>
+</html>

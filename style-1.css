@@ -1,0 +1,30 @@
+/* Commentaire */
+
+body {
+    background-color: #979494;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+}
+
+
+input {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#password {
+    display: block;
+    margin: 10px auto;
+}
+
+#login {
+    display: block;
+    margin: 10px auto;
+}
